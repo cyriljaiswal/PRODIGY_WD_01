@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page | PRODIGY_WD_01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Brand<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Build Something Great</h1>
+        <p>A responsive landing page with a navigation bar that adapts as you scroll and interact.</p>
+        <a href="#features" class="cta-btn">Get Started</a>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <circle cx="200" cy="160" r="130" fill="#eaf1ff" opacity="0.9" />
+          <rect x="90" y="70" width="220" height="150" rx="16" fill="#ffffff" stroke="#2563eb" stroke-width="2" />
+          <rect x="110" y="92" width="160" height="14" rx="7" fill="#2563eb" />
+          <rect x="110" y="118" width="120" height="10" rx="5" fill="#bcd4ff" />
+          <rect x="110" y="138" width="140" height="10" rx="5" fill="#bcd4ff" />
+          <rect x="110" y="170" width="90" height="26" rx="8" fill="#06b6d4" />
+          <circle cx="305" cy="80" r="18" fill="#06b6d4" opacity="0.9" />
+          <circle cx="95" cy="225" r="12" fill="#2563eb" opacity="0.6" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <section id="features" class="section">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Looks great on mobile, tablet, and desktop screens alike.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </div>
+        <h3>Dynamic Navbar</h3>
+        <p>Changes style on scroll and highlights menu items on hover.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <h3>Fast & Lightweight</h3>
+        <p>Built with vanilla HTML, CSS, and JavaScript — no dependencies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Responsive</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Dependencies</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Core Sections</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">&lt;1s</span>
+        <span class="stat-label">Load Time</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <h2>About</h2>
+    <p class="about-text">
+      This page was built to demonstrate an interactive, fixed-position navigation menu
+      that responds to scroll position and hover state, using only HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p class="contact-sub">Have a question? Reach out anytime.</p>
+    <a href="mailto:hello@example.com" class="cta-btn">Email Us</a>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
